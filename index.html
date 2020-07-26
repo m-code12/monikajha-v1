@@ -8,6 +8,10 @@
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style type="text/css">
+		html {
+  			scroll-behavior: smooth;
+    	}
+
 		.nava {
 			width: 32%;
 			height: 7%;
@@ -15,63 +19,114 @@
 
 		.long {
 			font-size: 50px;
-			
 		}
+
+		.fix {
+			margin-top: 0px;
+			width: 100%;
+			height: 8%;
+			opacity: 0.85;
+			overflow: hidden;
+			z-index: 1020;
+			position: fixed;
+  			
+		}
+
+		.navbar-brand {
+			font-size: 22px;
+		}
+
+		.form-group {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.ff {
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: #000316;
+    width: 600px;
+    margin: 40px auto;
+    color: #FFFAFA;
+    letter-spacing: 1.3px; 
+}
+
+.form-button {
+    margin-top: 20px;
+    margin-left: 270px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    align-self: center;
+    background-color: #D8BFD8;
+    border: 2px solid #FFFAFA;
+    color:  #2F4F4F;
+}
+
+.form-button button:hover {
+    background-color: #A9A9A9;
+    color: white;
+}
+
 	</style>
 </head>
 <body>
-<div id="particles-js" class="mb-5">
+<div id="particles-js" class="mb-0">
 	
-<nav class="navbar navbar-expand-lg navbar-dark .bg-transparent sticky-top">
+	
+<nav class="navbar navbar-expand-lg navbar-dark fix">
 	<div class="container">
-	<a class="navbar-brand" href="#"><b>Monika  Jha</b></a>
+	<a class="navbar-brand" href="https://github.com/m-code12"><b>Monika  Jha</b></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link mr-5">Home</a>
+                    <a href="index.html" class="nav-link mr-5" style="color: #F8F8FF">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link mr-3"></a>
                 </li>
                 <li class="nav-item">
-                    <a href="projects.html" class="nav-link mr-5">Projects</a>
+                    <a href="#projects" class="nav-link mr-5" style="color: #F8F8FF">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link mr-3"></a>
                 </li>
                 <li class="nav-item">
-                    <a href="experience.html" class="nav-link mr-5">Experience</a>
+                    <a href="#experience" class="nav-link mr-5" style="color: #F8F8FF">Experience</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link mr-3"></a>
                 </li>
                 <li class="nav-item">
-                    <a href="education.html" class="nav-link mr-5">Education</a>
+                    <a href="#education" class="nav-link mr-5" style="color: #F8F8FF">Education</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link mr-3"></a>
                 </li>
                 <li class="nav-item">
-                    <a href="contact.html" class="nav-link mr-3">Contact Me</a>
+                    <a href="#contact" class="nav-link mr-3" style="color: #F8F8FF">Contact Me</a>
                 </li>
             </ul>
         </div>
     </div>
-    </nav>
+</div>
+</nav>
 </div>
 
 
-
-<section class="container-fluid pt-5 pb-5 mt-5">
+<section class="container-fluid pb-5 pt-3">
   <div class="row align-items-center">
     <div class="col-lg-5 pl-5 pr-0 ml-0 px-2">
       <img class="img-fluid" src="images/img3.gif" width="500">
     </div>
 
-    <div id="one" class="col-lg-7 col-sm-12 text-left pl-5 pr-5 pt-3">
+    <div id="one" class="col-lg-7 col-sm-12 text-left pl-5 pr-5 pt-1">
     <div class="card border-light glow-but mr-auto">
             <div class="card-body">
     <h5 class="mb-3 primary"><center>About Me</center></h5>
@@ -83,6 +138,7 @@
   </div>
 </section>
 
+
 <section class="container-fluid pt-5 pb-2">
   <div class="row align-items-center">
     <div id="one" class="col-lg-7 col-sm-12 text-left pl-2 pr-0 ml-0.2">
@@ -92,11 +148,11 @@
           	<div class="card border-light glow-but mr-auto">
           		<div class="card-body">
     <div class="pt-0">
-    <h5 style="color: grey;"><b>My technical skills are primarily focused at Programming in C, C++, Python, Web Development and Competitive Programming.</b></h5></div>
+    <h5 style="color: #FFFFF0;"><b>My technical skills are primarily focused at Programming in C, C++, Python and Web Development. I also like to play around with data structures and algorithms .</b></h5></div>
     <div class="pt-3">
-    <h5 style="color: grey;"><b>I am currently interning as a Web Developer at a Startup named, The Indie Corp.</b></h5></div>
+    <h5 style="color: #FFFFF0;"><b>I am currently interning as a Web Developer at a Startup named, The Indie Corp.</b></h5></div>
     <div class="pt-3">
-    <h5 style="color: grey;"><b>My vision is to contribute to the education sector and create a social impact through my work.</b></h5></div>
+    <h5 style="color: #FFFFF0;"><b>My vision is to contribute to the education sector and create a social impact through my work.</b></h5></div>
   
   </div>
 </div>
@@ -112,7 +168,7 @@
 <h1 style="color: #F0FFF0" class="mt-5"><center>Have a look at my Resume!</center></h1>
 
 
-<section class="container pt-3 pb-4 nava">
+<section class="container pt-3 pb-0 nava">
     <div class="row">
         <div class="col-lg-12 pr-5 mr-5 ml-4 pl-4">
             <div class="card border-light gl1">
@@ -130,6 +186,303 @@
 </div>
 </div>
 </section>
+
+<section id="projects" class="mt-0">
+	
+<br><br><br>
+	<h1 style="color: #F8F8FF" class="mt-1"><center>Projects</center></h1>
+
+<section class="container">
+    <div class="row">
+        <div class="col-lg-6 pr-5 pb-4 pt-5">
+            <div class="card border-light gl">
+                <div class="card-body">
+                        <h1 class="pl-1 pb-1"><b><center>Sensing Shooter</center></b></h1>
+    <div align="center"><i class="fa fa-microchip glyp pr-3" aria-hidden="false"></i></div> 
+
+    <div class="card-body">
+    <p class="card-text">The project was designed using Arduino UNO to be used in prohibited areas for Border Security which senses the target and displays it with the help of camera and performs shooting depending on the command given.The link to the project is <a href="https://github.com/m-code12/Sensing-Shooter"> here</a> .</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-6 pr-5 pt-5">
+            <div class="card border-light gl">
+                <div class="card-body">
+                        <h1 class="pl-1 pb-1"><b><center>Library Management System</center></b></h1>
+    <div align="center"><i class="fa fa-book glyp pr-3" aria-hidden="false"></i></div> 
+
+    <div class="card-body">
+    <p class="card-text pt-0">A complete Library Management System in C programming languauge .The link to the project is <a href="https://github.com/m-code12/Library_Management_in_C"> here</a> .</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-6 pr-5 pt-5 pb-4">
+            <div class="card border-light gl">
+                <div class="card-body">
+                        <h1 class="pl-1 pb-1"><b><center>The Girl Code's Blog</center></b></h1>
+    <div align="center"><i class="fa fa-bookmark-o glyp pr-3" aria-hidden="false"></i></div> 
+
+    <div class="card-body">
+    <p class="card-text pt-0">This blog-website was developed as part of a project by #Build Program of Girlscript Foundation. It was made using HTML,CSS and Bootstrap.The link to the project is <a href="https://github.com/m-code12/The_Girl_Code_Blog"> here</a> .</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-6 pr-5 pt-5">
+            <div class="card border-light gl">
+                <div class="card-body">
+                        <h1 class="pl-1"><b><center>Hangman Game</center></b></h1>
+    <div align="center"><i class="fa fa-gamepad glyp pr-3" aria-hidden="false"></i></div> 
+
+    <div class="card-body">
+    <p class="card-text pt-0">A beginner-level project in python which uses various modules and concepts of python to play with words.The link to the project is <a href="https://github.com/m-code12/Hangman_Game"> here</a> .</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-6 pr-5 pt-5">
+            <div class="card border-light gl">
+                <div class="card-body">
+                        <h1 class="pl-1 pb-3"><b><center>JPMorgan Chase Virtual Internship</center></b></h1>
+    <div align="center"><i class="fa fa-building-o glyp pr-3" aria-hidden="false"></i></div> 
+
+    <div class="card-body">
+    <p class="card-text pt-0">It gave me insights about the entry-level tasks to be performed and made me familiar with JPMorgan Chase Tools and Frameworks. It consisted of several modules consisting of data analysis ,data visualization ,stock market and trading concepts.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-6 pr-5 pt-5">
+            <div class="card border-light gl">
+                <div class="card-body">
+                        <h1 class="pl-1 pb-3"><b><center>Animation Project using C language</center></b></h1>
+    <div align="center"><i class="fa fa-umbrella glyp3 pr-3" aria-hidden="false"></i></div> 
+
+    <div class="card-body">
+    <p class="card-text pt-0">The project depicts a man walking with an umbrella on a rainy day.The link to the project is <a href="https://github.com/m-code12/Animation_using_C"> here</a> .</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+</div>
+
+
+<section id="experience" class="mt-0">
+	<br><br><br>
+<h1 style="color: #FFFFF0" class="mt-1"><center>Internships</center></h1>
+
+<section class="container">
+    <div class="row">
+
+<div class="col-lg-4 pr-5 pt-5">
+            <div class="card border-light glow pt-0 pb-0 mt-0 mb-0">
+                <div class="card-body">
+    <div align="center"><img src="images/indie.jpeg" width="220"></div> 
+    <h1 class="pl-1 pt-3"><b><center>Web Developer</center></b></h1>
+    <p class="card-text pt-0">Contributing as a Web Developer at a mobile and web app firm named, The Indie Corp.</p>
+
+</div>
+</div>
+</div>
+
+        <div class="col-lg-4 pr-5 pt-5">
+            <div class="card border-light glow pt-0 pb-0 mt-0 mb-0">
+                <div class="card-body">
+    <div align="center"><img src="images/gs.png"></div> 
+    <h1 class="pl-1 pt-3"><b><center>Student Mentor</center></b></h1>
+    <p class="card-text pt-0">My responsibilities include mentoring and teaching students C Programming as a mentor in Girlscript Foundation .</p>
+
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 pr-5 pt-5">
+            <div class="card border-light glow pt-0 pb-0 mt-0 mb-0">
+                <div class="card-body">
+    <div align="center"><img src="images/muq.jpg" width="250"></div> 
+    <h1 class="pl-0 pt-3"><b><center>Intern Administrator</center></b></h1>
+    <p class="card-text pt-0">Involved in website maintenance ,working on database and uploading required data on server in muquestionpapers.com .</p>
+
+</div>
+</div>
+</div>
+
+
+</div>
+
+<div class="row pb-0">
+
+    <div class="col-lg-4 pr-5 pt-5">
+            <div class="card border-light glow pt-0 pb-0 mt-0 mb-0">
+                <div class="card-body">
+    <div align="center"><img src="images/gsoc.jpg" width="280"></div> 
+    <h1 class="pl-1 pt-3"><b><center>Open Source Contributor</center></b></h1>
+    <p class="card-text pt-0">Contributed to four projects in domains like web development, system testing,etc and secured a rank in top 35 in Girlscript Summer of Code 2020.</p>
+
+</div>
+</div>
+</div>
+
+        <div class="col-lg-4 pr-5 pt-5">
+            <div class="card border-light glow pt-0 pb-0 mt-0 mb-0">
+                <div class="card-body">
+    <div align="center"><img src="images/ma.jpg" width="120"></div> 
+    <h1 class="pl-1 pt-2"><b><center>Database Manager</center></b></h1>
+    <p class="card-text pt-0">My responsibilities include to handle the database using technologies like Firebase and co-ordinate with other team members in Mobile App Developer's Club of my college.</p>
+
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 pr-5 pt-5">
+            <div class="card border-light glow pt-0 pb-0 mt-0 mb-0">
+                <div class="card-body">
+    <div align="center"><img src="images/ludifu.jpg" width="140"></div> 
+    <h1 class="pl-1 pt-3"><b><center>Marketing Intern</center></b></h1>
+    <p class="card-text pt-0">My responsibilities were to manage
+database in MS Excel and do marketing via email in a startup named, Let Us Do It For You (LUDIFU) .</p>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<section id="education" class="mt-0">
+	<br><br><br>
+<h1 style="color: #FFFFF0" class="mt-1"><center>Education</center></h1>
+
+<section class="container pt-5">
+    <div class="row">
+        <div class="col-lg-12 pr-5 pb-0">
+            <div class="card border-light gl">
+                <div class="card-body">
+                    <div class="row">
+                    <div class="col-lg-2">
+    <i class="fa fa-graduation-cap glyp pl-3 pt-5" aria-hidden="false"></i></div>
+    <div class="col-lg-10">
+        <h1 style="color: #EEE8AA" class="pl-5"><b>Thadomal Shahani Engineering College</b></h1>
+        <p style="color: #FAFAD2" class="pl-5">Pursuing Third year Computer Engineering ( 2018-2022 )</p>
+
+        <p style="color: #FAFAD2" class="pt-2 pl-5">⚡ Core Team Member of Coding Club of TSEC, TSEC Codecell and Mobile App Developer's (MAD) Club.</p>
+        <p style="color: #FAFAD2" class="pt-0 pl-5">⚡ Ranked 4th in the internal Smart India Hackathon conducted by our college.</p>
+        <p style="color: #FAFAD2" class="pt-0 pl-5">⚡ Ranked 3rd in Project Expo conducted by E-cell of our college.</p>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="container pt-5 pb-0">
+    <div class="row">
+        <div class="col-lg-12 pr-5 pb-0">
+<div class="card border-light gl">
+                <div class="card-body">
+                    <div class="row">
+                    <div class="col-lg-2">
+    <i class="fa fa-university glyp pl-3 pt-5" aria-hidden="false"></i></div>
+    <div class="col-lg-10">
+        <h1 style="color: #EEE8AA" class="pl-5"><b>Shri T.P.Bhatia Junior College of Science</b></h1>
+        <p style="color: #FAFAD2" class="pl-5">Prepared for Engineering Entrance exams with Computer Science as vocational subject ( 2016-2018 )</p>
+
+        <h1 style="color: #EEE8AA" class="pl-5 pt-3"><b>Our Lady of Remedy High School</b></h1>
+        <p style="color: #FAFAD2" class="pl-5">Upheld various leadership positions along with academics and got the All-Rounder Student Award ( 2006-2016 )</p>
+
+    </div>
+
+         </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<section id="contact" class="mt-0">
+	
+<br><br><br>
+<h1 style="color: #00FFFF" class="mt-1"><center>Connect with me via :</center></h1>
+
+    <section class="container">
+    <div class="row">
+        <div class="col-lg-4 pr-5 pt-5">
+            <div class="card border-light glow pt-0 pb-0 mt-0 mb-0">
+                <div class="card-body">
+    <div align="center"><a href="https://github.com/m-code12" style="color: #FFEBCD" class="stretched-link"><i class="fa fa-github glyp pr-3" aria-hidden="false"></i></a></div> 
+    <h1 class="pl-1"><b><center>GitHub</center></b></h1>
+    <div class="card-body">
+    <p class="card-text pt-0">Have a look at my projects. I love to collaborate on Open Source Projects .</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 pr-5 pt-5">
+            <div class="card border-light glow mr-auto">
+                <div class="card-body">
+    <center><a href="https://www.linkedin.com/in/monika-jha-413895176/" style="color: #FFEBCD" class="stretched-link"><i class="fa fa-linkedin-square glyp1 pr-3" aria-hidden="true"></i></a></center>
+    <h1 class="pl-1"><b><center>LinkedIn</center></b></h1>
+    <div class="card-body">
+    <p class="card-text">Come, be a part of my Professional Network . As they say , your Network is your Net-worth .</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 pr-5 pt-5">
+            <div class="card border-light glow mr-auto">
+                <div class="card-body">
+    <p class="card-text"><h1 class="pl-1"><i class="fa fa-phone glyp2 pr-3" aria-hidden="true"></i><b>  Phone </h1>7715899478</b></p>
+    
+    <p class="card-text"><h1 class="pl-1"><a href="mailto: monikajha70@gmail.com" style="color: #FFEBCD" class="stretched-link"><i class="fa fa-envelope glyp2 pr-3" aria-hidden="true"></i></a><b>  Email </h1>monikajha70@gmail.com</b></p>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+
+
+<h1 style="color: #C0C0C0" class="mt-5 mb-5"><center>Get in Touch :</center></h1>
+
+<div class="ff">
+<form>
+    <div class="user">
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Name</label>
+    <input class="form-control form-control-lg" type="text">
+    <!--<textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>-->
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Email</label>
+    <input class="form-control form-control-lg" type="text">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Message</label>
+   <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+  </div>
+  <div class="form-button">
+<button type="submit" class="btn btn-primary"><a href="#" style="color: #A52A2A"> Submit </a></button>
+</div>
+</div>
+</form>
+</div>
+
+
+
 </section>
 
 
