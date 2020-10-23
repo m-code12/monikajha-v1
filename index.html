@@ -461,23 +461,23 @@ database in MS Excel and do marketing via email in a startup named, Let Us Do It
 <h1 style="color: #C0C0C0" class="mt-5 mb-5"><center>Get in Touch :</center></h1>
 
 <div class="ff">
-<form>
+<form action="userinfo.php" method="post">
     <div class="user">
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Name</label>
-    <input class="form-control form-control-lg" type="text">
+    <input class="form-control form-control-lg" type="text" name="username">
     <!--<textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>-->
   </div>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Email</label>
-    <input class="form-control form-control-lg" type="text">
+    <input class="form-control form-control-lg" type="text" name="email">
   </div>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Message</label>
-   <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+   <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" name="message"></textarea>
   </div>
   <div class="form-button">
-<button type="submit" class="btn btn-primary"><a href="index.html" style="color: #A52A2A"> Submit </a></button>
+<button type="submit" class="btn btn-primary">Submit</button>
 </div>
 </div>
 </form>
