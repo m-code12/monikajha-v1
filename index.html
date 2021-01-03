@@ -15,6 +15,31 @@
   			scroll-behavior: smooth;
     	}
 
+    	#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: white;
+  font-color: blue;
+  cursor: pointer;
+  padding: 14px;
+  border-radius: 47%;
+}
+
+.fa-angle-double-up {
+  background-color: #C0C0C0;
+}
+
+#myBtn:hover {
+  background-color: #C0C0C0;
+}
+
 		.nava {
 			width: 32%;
 			height: 7%;
@@ -120,6 +145,8 @@
     </div>
 </nav>
 </div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up p-1 font-weight-bold" aria-hidden="true" style="color: black;"></i></button>
 
 
 <section class="container-fluid pb-5 pt-3" id="home">
@@ -488,9 +515,31 @@ database in MS Excel and do marketing via email in a startup named, Let Us Do It
 </section>
 
 
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 <script src="particles.js"></script>
 <script src="app.js"></script>
+
 
 <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>--->
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>--->
